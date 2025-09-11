@@ -47,7 +47,7 @@ export default function Login() {
         {/* Bagian Kanan - Form */}
         <div className="w-full md:w-1/2 p-10">
           <h2 className="text-3xl font-extrabold text-green-600 mb-2">Welcome Back</h2>
-          <p className="text-gray-600 mb-6">Masuk untuk cek gizimu dengan kalkulator gizi</p>
+          <p className="text-gray-600 mb-6">Masuk untuk cek gizimu dengan kalkulator gizi (IMT)</p>
 
           <form onSubmit={handleLogin} className="space-y-5">
             <input type="email" placeholder="Email Address" value={email} onChange={(e) => setEmail(e.target.value)} className="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-green-400 focus:outline-none" required />
