@@ -25,9 +25,8 @@ export default function Login() {
 
       login(payload);
 
-      toast.success("Login berhasil!", {
-        onClose: () => navigate(res.data.redirectUrl, { replace: true }),
-      });
+      toast.success("Login berhasil!");
+      navigate(res.data.redirectUrl, { replace: true });
     } catch (err) {
       toast.error(err.response?.data?.message || "Login gagal!");
     }
